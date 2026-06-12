@@ -1,205 +1,170 @@
-# 🪶 Poetic Naming Creator
+# Poetic Naming Creator
 
-> **An AI agent skill that generates original, meaningful, and memorable names** — for companies, products, features, campaigns, and everything in between.
+**An agent skill for generating original, brand-quality names** — for companies, products, features, campaigns, and everything in between.
 
-[![Install with Skills CLI](https://img.shields.io/badge/skills.sh-install-blue?style=flat-square)](https://skills.sh)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-
----
-
-## ✨ What Is This?
-
-**Poetic Naming Creator** is an [Agent Skill](https://skills.sh) — a structured set of instructions that teaches AI agents (Claude Code, Cursor, Windsurf, Codex, etc.) how to generate **brand-quality names** with strong metaphor, emotional depth, and real strategic value.
-
-Instead of generic names like _CloudPilot_, _DataFlow_, or _GrowthOps_, this skill produces names like:
-
-> **Black Lantern** · **Glass Oracle** · **Stonecloud** · **Signal Garden** · **Moss Engine** · **Human Atlas** · **Velvet Cart** · **Dream Circuit** · **Clause & Compass** · **Concrete Swan**
+[![Install with Skills CLI](https://img.shields.io/badge/skills.sh-install-black?style=flat-square)](https://skills.sh) [![License: MIT](https://img.shields.io/badge/License-MIT-gray?style=flat-square)](LICENSE)
 
 ---
 
-## 🎯 When Does It Trigger?
+## What it does
 
-The skill activates when the user needs creative, brandable, or meaningful names for:
+Most AI-generated names are forgettable. This skill isn't.
 
-- 🏢 **Companies & Startups** — Founding names, holding companies
-- 🚀 **SaaS Products & Apps** — B2B tools, consumer products, AI agents
-- 🏗️ **Agencies & Studios** — Creative shops, consultancies, dev studios
-- 🔧 **Developer Tools & Frameworks** — CLIs, libraries, platforms
-- 📦 **Product Features & Modules** — In-app features, modes, settings
-- 📣 **Campaigns & Communities** — Marketing campaigns, community names
-- 💎 **Pricing Plans & Product Lines** — Tier names, sub-brands
+It teaches AI agents to think like a brand strategist, naming consultant, and poet at once — producing names with metaphor, emotional depth, and real strategic value instead of defaults like *CloudPilot*, *DataFlow*, or *GrowthOps*.
 
-Even casual requests like _"help me name this thing"_ or _"I need a name for my startup"_ will trigger the skill.
+**Output looks like this:**
+
+> Black Lantern · Glass Oracle · Stonecloud · Signal Garden · Moss Engine · Human Atlas · Velvet Cart · Dream Circuit · Clause & Compass · Concrete Swan
 
 ---
 
-## 📦 Installation
+## Installation
 
-### Using the Skills CLI (Recommended)
-
+**Via Skills CLI (recommended)**
 ```bash
 npx skills add radityprtama/poetic-naming-creator
 ```
 
-### Manual Installation
-
-Clone or download this repository into your agent's skills directory:
-
+**Manual**
 ```bash
 # Claude Code
 git clone https://github.com/radityprtama/poetic-naming-creator.git ~/.claude/skills/poetic-naming-creator
-
-# Or copy SKILL.md and references/ to your agent's skill folder
 ```
 
 ---
 
-## 📁 Skill Structure
+## Usage
+
+Just ask naturally — no special syntax required.
 
 ```
-poetic-naming-creator/
-├── SKILL.md                    # Core skill instructions (required)
-├── references/
-│   ├── word-banks.md           # 300+ curated words across 12 clusters
-│   ├── patterns.md             # 10 repeatable name construction patterns
-│   └── sectors.md              # Sector-specific naming guidance (16 industries)
-├── README.md                   # This file
-└── LICENSE                     # MIT License
+"I need a name for my AI-powered legal contract analyzer"
+"Help me name my climate tech startup"
+"Give me feature names for my project management tool"
+"Name my design agency — something premium and mythic"
 ```
 
-| File | Purpose |
+**Example output:**
+
+```markdown
+## Direction 1: Industrial Intelligence
+- Clause & Compass — navigation through legal complexity
+- White Gavel — authority with clarity and fairness
+
+## Direction 2: Organic Systems
+- Contract Garden — agreements that grow and evolve
+- Policy Harbor — safe port for regulatory navigation
+
+## Direction 3: Mythic Clarity
+- Glass Oracle — transparent foresight
+- Legal Lantern — light in legal darkness
+```
+
+Each name comes with: rationale, domain suggestions, and expandability ideas.
+
+---
+
+## When it triggers
+
+The skill activates for naming requests across any context:
+
+| Target | Examples |
 |---|---|
-| `SKILL.md` | Main instructions — loaded every time the skill is invoked |
-| `references/word-banks.md` | Core vocabulary organized by theme (light, nature, industrial, etc.) |
-| `references/patterns.md` | 10 proven naming formulas with examples and usage guidance |
-| `references/sectors.md` | Industry-specific metaphors, themes, and example names for 16 sectors |
+| Companies & Startups | Founding names, holding companies |
+| SaaS Products & Apps | B2B tools, consumer apps, AI agents |
+| Agencies & Studios | Creative shops, consultancies, dev studios |
+| Developer Tools | CLIs, libraries, platforms, frameworks |
+| Product Features | In-app modules, modes, settings, tiers |
+| Campaigns & Communities | Marketing campaigns, community names |
+
+Even casual prompts like *"help me name this thing"* will trigger it.
 
 ---
 
-## 🧠 How It Works
+## How it works
 
-### Core Philosophy
+### Quality criteria
 
-The skill teaches AI agents to think like a hybrid of: **brand strategist**, **naming consultant**, **poet**, **product designer**, **startup founder**, **UX writer**, and **systems thinker**.
+Every name is evaluated against 10 criteria. A name needs at least 3 to make the cut.
 
-Every generated name is evaluated against **10 quality criteria**:
+| Criteria | What it means |
+|---|---|
+| Memorable | Easy to recall after hearing once |
+| Meaningful | Has a story, metaphor, or emotional anchor |
+| Flexible | Survives product pivots and business evolution |
+| Distinctive | Doesn't sound like every other SaaS or agency |
+| Philosophical | Suggests a deeper worldview |
+| Visual | Creates an image in the mind |
+| Strategic | Supports positioning and trust |
+| Speakable | Easy to say in conversation |
+| Domain-friendly | Works as `.com`, `.app`, `.dev`, `.ai`, `.studio` |
+| Expandable | Can become a system of sub-brands |
 
-1. **Memorable** — Easy to recall after hearing once
-2. **Meaningful** — Has a story, metaphor, or emotional anchor
-3. **Flexible** — Survives product pivots and business evolution
-4. **Distinctive** — Doesn't sound like every other SaaS or agency
-5. **Philosophical** — Suggests a deeper worldview
-6. **Visual** — Creates an image in the mind
-7. **Strategic** — Supports positioning and trust
-8. **Speakable** — Easy to say in conversation
-9. **Domain-friendly** — Works as `.com`, `.app`, `.dev`, `.ai`, `.studio`
-10. **Expandable** — Can become a system of sub-brands
+### Naming styles
 
-A name must satisfy **at least 3 of these 10** to be included.
-
-### Naming Styles
-
-| Style | Feel | Best For |
+| Style | Feel | Best for |
 |---|---|---|
-| **Poetic Tech** | Nature + philosophy + systems | AI, data, climate, creative tools |
-| **Mythic / Archetypal** | Guardians, oracles, ancient roles | Security, legal, AI, enterprise |
-| **Warm Humanist** | Care, softness, trust | Healthtech, edtech, HR, wellness |
-| **Industrial Elegant** | Strong, premium, architectural | DevOps, infra, logistics, B2B |
-| **Strategic Minimal** | Clear positioning with character | SaaS, fintech, AI productivity |
-| **Editorial / Studio** | Agency, bureau, creative house | Agencies, studios, consultancies |
-| **Feature Naming** | Useful, delightful, integrated | App features, modules, modes |
+| Poetic Tech | Nature + philosophy + systems | AI, data, climate, creative tools |
+| Mythic / Archetypal | Guardians, oracles, ancient roles | Security, legal, AI, enterprise |
+| Warm Humanist | Care, softness, trust | Healthtech, edtech, HR, wellness |
+| Industrial Elegant | Strong, premium, architectural | DevOps, infra, logistics, B2B |
+| Strategic Minimal | Clear positioning with character | SaaS, fintech, AI productivity |
+| Editorial / Studio | Agency, bureau, creative house | Agencies, studios, consultancies |
+| Feature Naming | Useful, delightful, integrated | App features, modules, modes |
 
-### Industry Coverage
+### Industry coverage
 
-The skill includes specialized naming guidance for **16 sectors**:
+Specialized naming guidance for 16 sectors:
 
 Security · Healthtech · AI/Automation · Infrastructure/DevOps · Finance · Education · Legal · Real Estate · Logistics · Ecommerce · HR/Recruitment · Marketing · Data/Analytics · Construction · Agriculture/Climate · Developer Tools · Agency/Studio
 
 ---
 
-## 💬 Example Usage
-
-Just ask your AI agent naturally:
+## File structure
 
 ```
-"I need a name for my AI-powered legal contract analyzer"
-
-"Help me name my climate tech startup"
-
-"Give me feature names for my project management tool"
-
-"I'm building a developer CLI tool, suggest some cool names"
-
-"Name my design agency — something that feels premium and mythic"
+poetic-naming-creator/
+├── SKILL.md                  # Core skill instructions
+├── references/
+│   ├── word-banks.md         # 300+ curated words across 12 clusters
+│   ├── patterns.md           # 10 repeatable name construction patterns
+│   └── sectors.md            # Sector-specific naming guidance
+├── README.md
+└── LICENSE
 ```
 
-### Example Output
+---
 
-The skill generates names grouped by **creative direction**:
+## Compatibility
 
-```markdown
-## Direction 1: Industrial Intelligence
-- **Clause & Compass** — Navigation through legal complexity
-- **White Gavel** — Authority with clarity and fairness
+Works with any agent that supports the [Agent Skills open standard](https://skills.sh):
 
-## Direction 2: Organic Systems  
-- **Contract Garden** — Agreements that grow and evolve
-- **Policy Harbor** — Safe port for regulatory navigation
+- Claude Code
+- Cursor
+- Windsurf
+- OpenAI Codex
+- Antigravity CLI (Gemini)
 
-## Direction 3: Mythic Clarity
-- **Glass Oracle** — Transparent foresight
-- **Legal Lantern** — Light in legal darkness
+---
+
+## Contributing
+
+Contributions welcome. High-value additions:
+
+- New sectors in `references/sectors.md`
+- Expanded word banks in `references/word-banks.md`
+- New construction patterns in `references/patterns.md`
+
+```bash
+git checkout -b add-new-sector
+# make changes
+# submit pull request
 ```
 
-Each name includes: rationale, domain suggestions, and expandability ideas.
-
 ---
 
-## 🔧 Compatibility
+## Credits
 
-This skill follows the [Agent Skills open standard](https://skills.sh) and works with:
+Created by [@radityprtama](https://github.com/radityprtama). Built for the [skills.sh](https://skills.sh) ecosystem.
 
-- ✅ [Claude Code](https://claude.ai) (Anthropic)
-- ✅ [Cursor](https://cursor.sh)
-- ✅ [Windsurf](https://codeium.com/windsurf)
-- ✅ [OpenAI Codex](https://openai.com)
-- ✅ Any agent that supports the Agent Skills standard
-- ✅ [Antigravity CLI](https://deepmind.google) (Gemini)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Some ways to help:
-
-- **Add new sectors** to `references/sectors.md`
-- **Expand word banks** in `references/word-banks.md`
-- **Create new patterns** in `references/patterns.md`
-- **Share names** you've generated using this skill
-
-### How to Contribute
-
-1. Fork this repository
-2. Create a feature branch (`git checkout -b add-new-sector`)
-3. Make your changes
-4. Submit a pull request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Credits
-
-Created by [@radityprtama](https://github.com/radityprtama).
-
-Built for the [skills.sh](https://skills.sh) ecosystem — giving AI agents the power of poetic, strategic naming.
-
----
-
-<p align="center">
-  <i>Great names are not labels. They create a <b>mental world</b>.</i>
-</p>
+*Great names aren't labels — they create a mental world.*
